@@ -9,19 +9,18 @@
 body {
     background-color: rgb(20, 20, 30);
     padding: 0px 50px;
+    
 }
 
-.container {
+.container{
     padding: 50px 0px;
-    height: 100vh;
+    margin: 0 auto;
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 20rem;
-
-}
+   
+  }
 
 .parent {
     height: 400px;
@@ -35,7 +34,7 @@ body {
     transform-style: preserve-3d;
     background-image: url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center c ;
-    width: 100%;
+    width: 300px;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
 
@@ -49,4 +48,86 @@ body {
 .content-box{
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgba(56, 109, 255, 0.993) 0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
+}
+
+.card-title{
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px,0px,20px);
+}
+
+.card-title:hover{
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.card-content{
+    padding-top: 15px;
+    font-size: 14px;
+    color: rgba(185, 185, 185, 0.877);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px );
+}
+
+.card-content:hover{
+    transform: translate3d(0px, 0px, 50px );
+}
+
+.see-more{
+    display: block;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(64, 115, 255);
+    padding-top: 15px;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+.see-more:hover{
+    transform: translate3d(0px, 0px, 40px);
+}
+.date-box{
+    
+    position: absolute;
+    top: -35px;
+    left: 25px;
+    height: 70px;
+    width: 70px;
+    background-color: black ;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -20px;
+    transform: translate3d(0px, 0px, 40px);
+}
+
+.date-box span{
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.date-box .three-d{
+    font-size: 20px;
+    font-weight: 1500;
+    color: rgb(64, 115, 255);
+}
+
+.card2{
+    filter: hue-rotate(180deg);
+    
+}
+.card3{
+    filter: hue-rotate(270deg);
+}
+.card4{
+    filter: hue-rotate(90deg);
 }
